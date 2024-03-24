@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: building-apps-deploy
+  labels:
+    app: kubeskills
+  replicas: 5
+  selector:
+    matchLabels:
+      app: kubeskills
+  template:
+    metadata:
+      labels:
+        app: kubeskills
+    spec:
+      containers:
+      - name: building-apps-container
+        image: my-cool-app
+
