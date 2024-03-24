@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: building-apps-deploy
+  labels:
+    app: kudeskills
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kudeskills
+  template:
+    metadata:
+      labels:
+        app: kudeskills
+    spec:
+      containers:
+      - name: building-apps-container
+        image: fabr1ce/go-app-for-k8s:0.2
