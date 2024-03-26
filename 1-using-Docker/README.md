@@ -1,5 +1,5 @@
-# building-apps-for-k8s-l3
-This repo creates a docker image for a Go app to be [used by Kubernetes](https://github.com/Fabr1ce/building-apps-for-k8s-l4-using-Kind), it also builds and tests the corresponding container.
+# using Docker
+This repo creates a docker image for a Go app to be [used by Kubernetes](https://github.com/Fabr1ce/building-apps-for/using-Kind), it also builds and tests the corresponding container.
 
 ### The first step here is to build the app locally to test it by doing the following:
 
