@@ -1,7 +1,7 @@
-## Building Apps for Kubernetes
+`## Building Apps for Kubernetes
 This repo contains multiple tasks/projects that build apps for Kubernetes. It is a beginner friendly project that outlines the steps and tools used to build and deploy applications for Kubernetes.
 ### Project Workflow
-The number that prefix each directory name represent the workflow I used for this project.
+Each section in this project has prefixed number that represent the workflow used. Each section also has a README that outlines the step by step workflow.
 
 1-using-Docker
 
@@ -13,3 +13,4 @@ The number that prefix each directory name represent the workflow I used for thi
 
 5-using-Skaffold
 
+`
