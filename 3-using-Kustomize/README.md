@@ -1,6 +1,6 @@
-# building-apps-for-k8s-l5
+# 3-using-Kustomize
 
-This repo is used to practice k8s deployments and service manifests as outlined in this [KubeAcademy course](https://kube.academy/courses/building-applications-for-kubernetes/lessons/deploying-your-application). Concepts covered here are also explained in the [k8s docs](https://kubernetes.io/docs/concepts/workloads/):
+This repo is used to practice k8s deployments and service manifests using Kustomize as outlined in this [KubeAcademy course](https://kube.academy/courses/building-applications-for-kubernetes/lessons/deploying-your-application). Concepts covered here are also explained in the [k8s docs](https://kubernetes.io/docs/concepts/workloads/):
 
 1. pods (groud of one or more containers with single IP)
 
