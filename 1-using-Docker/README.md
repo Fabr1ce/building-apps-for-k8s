@@ -1,4 +1,4 @@
-# using Docker
+# 1-using-Docker
 This section creates a docker image for a Go app used by Kubernetes in the [2-using-Kind](https://github.com/Fabr1ce/building-apps-for-k8s/tree/main/2-using-Kind) section of this repo, it also builds and tests the corresponding container.
 
 ### The first step here is to build the app locally to test it by doing the following:
