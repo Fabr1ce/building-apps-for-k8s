@@ -14,7 +14,7 @@ From an empty directory, using the CLI:
 
 2 . Clean the repo by removing unnecessary files. The command above creates a lot of template files and most do not apply to this specific use case which can be removed.
 
-3 . Add templates to the build4kube/templates directory. YAML templates ([deployment.yaml](https://github.com/Fabr1ce/building-apps-for-k8s-l5-using-Kustomize/blob/main/deployment.yaml) and [service.yaml](https://github.com/Fabr1ce/building-apps-for-k8s-l5-using-Kustomize/blob/main/service.yaml)) from [lab 5](https://github.com/Fabr1ce/building-apps-for-k8s-l5-using-Kustomize) can be used.
+3 . Add templates to the build4kube/templates directory. YAML templates ([deployment.yaml](https://github.com/Fabr1ce/building-apps-for-k8s/blob/main/3-using-Kustomize/deployment.yaml)) and [service.yaml](https://github.com/Fabr1ce/building-apps-for-k8s/blob/main/3-using-Kustomize/service.yaml)) from [3-using-Kustomize](https://github.com/Fabr1ce/building-apps-for-k8s/tree/main/3-using-Kustomize) can be used.
 The templates need to be changed in order for Helm to use them:
 - Add a **release name**: this is a **versioning** system in Helm. Add this as a **variable** and repeat for any other values you do not wish to hard code. Helm replaces these at deployment.
 - Create a build4kube/values.yaml file with the removed values in previuous step.
@@ -22,7 +22,7 @@ The templates need to be changed in order for Helm to use them:
 	`helm install --generate-name ./build4kube/ --dry-run`
 	This command will display a full manifest that will be deployed.
 4 . Manage the application
-This section deals with managing the app deployment. A k8s cluster must already exist in order to deploy this app. Steps from [this lab](https://github.com/Fabr1ce/building-apps-for-k8s-l4-using-Kind) show how to create a k8s cluster using  kind. 
+This section deals with managing the app deployment. A k8s cluster must already exist in order to deploy this app. Steps from the section [2-using-Kind](https://github.com/Fabr1ce/building-apps-for-k8s/tree/main/2-using-Kind) show how to create a k8s cluster using  kind. 
 - **Deploy** app: 
 	`helm install --generate-name ./build4kube`
   Very deployment with: 
