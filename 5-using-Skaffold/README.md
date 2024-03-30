@@ -1,5 +1,5 @@
-# Improving Development Workflow with Skaffold
-Skaffold builds k8s manifest, detects changes in manifest and automatically updates the deployments. It provides a tight feedback loop.
+# 5-using-Skaffold (Improving Development Workflow with CI/CD)
+[Skaffold](https://skaffold.dev/) builds k8s manifest, detects changes in manifest and automatically updates the deployments. It provides a tight CI/CD feedback loop.
 
 ## 1 - Install Skaffold
 The command below is for Linux x86_64, for other systems, see the [docs](https://skaffold.dev/docs/install/).
