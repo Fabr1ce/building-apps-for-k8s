@@ -17,7 +17,7 @@ This repo is used to practice k8s deployments and service manifests using Kustom
 2. Install Kustomize
 
 ## Steps to create a k8s deployment and service:
-1. Create a cluster: refer to https://github.com/Fabr1ce/building-apps-for-k8s-l4 for steps on how to create a kubernetes cluster.
+1. Create a cluster: refer to the section [2-using-Kind](https://github.com/Fabr1ce/building-apps-for-k8s/tree/main/2-using-Kind) for steps on how to create a kubernetes cluster.
 
 2. Write YAML files to pass to k8s or use the ones in this repo and use the following cmds:
 
