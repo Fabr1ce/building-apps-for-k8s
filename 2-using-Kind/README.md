@@ -1,6 +1,6 @@
 # building-apps-for-k8s-l4-using-Kind
 
-This repository is used to build a _Kubernetes_ cluster locally for testing using _Kind_ and run a pod on that cluster using a docker image that was created in this [repo](https://github.com/Fabr1ce/building-apps-for-k8s-l3-using-Docker). The assumption here is that docker and kind are aleady installed locally, if not the following links are used to [install docker](https://docs.docker.com/engine/install/) and to [install kind](https://kubernetes.io/docs/tasks/tools/). For more on _Kind_, see the docs here https://kind.sigs.k8s.io/.
+This repository is used to build a _Kubernetes_ cluster locally for testing using _Kind_ and run a pod on that cluster using a docker image that was created in the [1-using-Docker section](https://github.com/Fabr1ce/building-apps-for-k8s/tree/cool-dev/1-using-Docker). The assumption here is that docker and kind are aleady installed locally, if not the following links are used to [install docker](https://docs.docker.com/engine/install/) and to [install kind](https://kubernetes.io/docs/tasks/tools/). For more on _Kind_, see the docs here https://kind.sigs.k8s.io/.
 
 The pod.yaml file is the only file needed.
 
