@@ -24,31 +24,49 @@ This repo is used to practice k8s deployments and service manifests using Kustom
 - **Without using Kustomize:**
    1. Create the deployment and verify:
   
-  `kubectl apply -f deployment.yaml`
-  
-  `kubectl get pods`
+     ```
+     kubectl apply -f deployment.yaml
+     ```
+     
+     ```
+     kubectl get pods
+     ```
   
    2. Create the service and verify:
   
-  `kubectl apply -f service.yaml`
-  
-  `kubectl get services`
+     ```
+     kubectl apply -f service.yaml
+     ```
+     
+     ```
+     kubectl get services
+     ```
   
   - service IP can be accessed through cURL like this `exec <outside-pod-name> curl <cluster-ip>`
   - pods can be accessed through cURL like this `exec <outside-pod-name> curl <pod-ip>:<port-in-manifest>`. Notice the difference between Port (port service listens on and forwards to NodePort) and NodePort (port pods listens on).
   - clean up:
   
-  `kubectl delete -f service.yaml`
-  
-  `kubectl delete -f deployment.yaml`
+     ```
+     kubectl delete -f service.yaml
+     ```
+     
+     ```
+     kubectl delete -f deployment.yaml
+     ```
 
 - **Using Kustomize:**
   Kustomize takes all the yaml files and creates all the components/objects/environments using the following cmds:
   
-  `kustomize build base`
-  
-  `kustomize build overlays/production`
-  
-  `kustomize build overlays/production | kubectl apply -f -`
+     ```
+     kustomize build base
+     ```
+     
+     ```
+     kustomize build overlays/production
+     ```
+     
+     ```
+     kustomize build overlays/production | kubectl apply -f -
+     ```
 
-Kustomize here took the base resource manifest and patched them with overlays.
+In summary, Kustomize took the base resource manifests and patched them with overlays.
