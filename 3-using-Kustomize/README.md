@@ -28,7 +28,7 @@ This repo is used to practice k8s deployments and service manifests using Kustom
 `kubectl get pods`
 
 
-## Create the service:
+### Create the service:
 
 `kubectl apply -f service.yaml`
 
