@@ -22,13 +22,13 @@ This repo is used to practice k8s deployments and service manifests using Kustom
 2. Write YAML files to pass to k8s or use the ones in this repo and use the following cmds:
 
 - **Without using Kustomize:**
-  ### Create the deployment and verify:
+   1. Create the deployment and verify:
   
   `kubectl apply -f deployment.yaml`
   
   `kubectl get pods`
   
-  ### Create the service and verify:
+   2. Create the service and verify:
   
   `kubectl apply -f service.yaml`
   
